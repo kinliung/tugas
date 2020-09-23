@@ -4,7 +4,7 @@ import math
 def func(expr, x):
     return eval(expr)
 
-input_expr = input("f(x) = ")
+input_expr = input("Masukkan persamaan fungsi x = ")
 a = eval(input("Masukkan nilai a : "))
 b = eval(input("Masukkan nilai b : "))
 
