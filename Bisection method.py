@@ -36,5 +36,5 @@ print("Akar persamaannya adalah = % 0.11f"% xh, "dan% 0.10f"% xh2)
 
 x = np.linspace(a,b,100)
 plt.plot(x,func(input_expr, x))
-plt.grid
+plt.grid()
 plt.show()
