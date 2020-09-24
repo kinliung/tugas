@@ -9,16 +9,17 @@ def newtonRaphson(x):
     h = fungsi(x) / TurunanFungsi(x)
     x1 = x - h
     i = 1
-    while (i<=n):
+    while (i<n):
         x = x1
         h = fungsi(x) / TurunanFungsi(x)
         x1 = x - h
         i += 1
         if (abs((x1 - x)/x1) < e):
           break
-
+     else:
+        print('Sudah mencapai iterasi maksimun')
     print('Akar Persamaannya :',
-          '%.4f' % x, 'pada iterasi ke-', i)
+          '%.4f' % x, 'pada iterasi ke-', i, 'dengan ketelitian', abs((x1 - x)/x1))
 
 x0 = float(input('Nilai X0 : '))
 e = float(input('Masukkan nilai ketelitian/error : '))
