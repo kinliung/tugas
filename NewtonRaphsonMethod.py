@@ -16,7 +16,7 @@ def newtonRaphson(x):
         i += 1
         if (abs((x1 - x)/x1) < e):
           break
-     else:
+    else:
         print('Sudah mencapai iterasi maksimun')
     print('Akar Persamaannya :',
           '%.4f' % x, 'pada iterasi ke-', i, 'dengan ketelitian', abs((x1 - x)/x1))
